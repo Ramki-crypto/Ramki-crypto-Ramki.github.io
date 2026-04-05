@@ -1,79 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio</title>
+  <title>My Projects</title>
   <style>
     body {
       font-family: Arial;
       margin: 0;
-      background: #f4f4f4;
+      background: #f5f7fa;
       text-align: center;
     }
+
     header {
-      background: #333;
+      background: #111;
       color: white;
       padding: 20px;
     }
-    section {
-      padding: 20px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
     }
+
     .card {
+      width: 320px;
       background: white;
-      margin: 10px auto;
-      padding: 15px;
-      width: 80%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: black;
+      transition: 0.3s;
     }
-    footer {
-      background: #333;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      margin: 0;
+    }
+
+    .card p {
+      color: gray;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>RAMKI</h1></h1>
-  <p>Design Engineer | CAD | Simulation</p>
+  <h1>My Projects 🚀</h1>
+  <p>Click any project to view details</p>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>I am a passionate design engineer with skills in CAD, analysis, and problem solving.</p>
-  </div>
-</section>
+<div class="container">
 
-<section>
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Project 1</h3>
-    <a href="project1.html">
-      <button class="btn">View project</button>
-    </a>
-  </div>
+  <a href="project1.html" class="card">
+    <h2>Project 1</h2>
+    <p>Click to view details</p>
+  </a>
 
-  <div class="card">
-    <h3>Project 2</h3>
-    <a href="project2.html">
-      <button class="btn">View Project</button>
-    </a>
-  
-</section>
+  <a href="project2.html" class="card">
+    <h2>Project 2</h2>
+    <p>Click to view details</p>
+  </a>
 
-<section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: Ramkim1111@gmail.com</p>
-    <p>phone: 91+ 6381142970</p>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Ramki</p>
-</footer>
+</div>
 
 </body>
 </html>
